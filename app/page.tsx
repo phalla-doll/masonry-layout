@@ -50,6 +50,30 @@ const projects = [
     category: "PRODUCTIVITY TOOL",
     aspectRatio: "aspect-[4/5]",
   },
+  {
+    id: "09",
+    title: "QuizLab",
+    category: "EDUCATION PLATFORM",
+    aspectRatio: "aspect-video",
+  },
+  {
+    id: "10",
+    title: "Dentify",
+    category: "HEALTHCARE APP",
+    aspectRatio: "aspect-[3/4]",
+  },
+  {
+    id: "11",
+    title: "Emotional Vent Space",
+    category: "WELLNESS PLATFORM",
+    aspectRatio: "aspect-square",
+  },
+  {
+    id: "12",
+    title: "Curated Products",
+    category: "E-COMMERCE",
+    aspectRatio: "aspect-[4/5]",
+  },
 ];
 
 export default function PortfolioSection() {
