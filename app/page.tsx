@@ -133,6 +133,63 @@ export default function PortfolioSection() {
             </div>
           ))}
         </div>
+
+        {/* --- VARIANT 2: Seamless Grid --- */}
+        <div className="mt-32 md:mt-40">
+          {/* Header */}
+          <div className="flex items-center justify-between border-b border-white/10 pb-6 mb-12 md:mb-20">
+            <h2 className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/50 font-mono">
+              Variant 02: Seamless Grid
+            </h2>
+          </div>
+
+          {/* Tight Grid */}
+          <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-0 border-t border-l border-white/10">
+            {projects.map((project) => (
+              <div
+                key={`v2-${project.id}`}
+                className="break-inside-avoid group cursor-pointer border-r border-b border-white/10 relative bg-[#050505] overflow-hidden"
+              >
+                <div
+                  className={`relative w-full ${project.aspectRatio} transition-all duration-500`}
+                >
+                  {/* Background Image with Grayscale and Dark Overlay */}
+                  <Image
+                    src={`https://picsum.photos/seed/${project.id}/800/1000`}
+                    alt={project.title}
+                    fill
+                    className="object-cover opacity-30 group-hover:opacity-50 transition-all duration-700 grayscale group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent opacity-80" />
+
+                  {/* Card Content */}
+                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between z-10">
+                    {/* Top section: Number and Arrow */}
+                    <div className="flex justify-between items-start">
+                      <span className="font-mono text-xs md:text-sm text-white/60">
+                        {project.id}
+                      </span>
+                      <div className="w-10 h-10 md:w-12 md:h-12 border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:bg-white group-hover:text-black group-hover:border-white">
+                        <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
+                      </div>
+                    </div>
+
+                    {/* Bottom section: Title and Category */}
+                    <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
+                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-3 md:mb-4 text-white/90 group-hover:text-white leading-tight">
+                        {project.title}
+                      </h3>
+                      <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
+                        {project.category}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
