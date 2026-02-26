@@ -208,7 +208,7 @@ export default function PortfolioSection() {
                 className="break-inside-avoid group cursor-pointer border-r border-b border-white/10 relative bg-[#050505] overflow-hidden"
               >
                 <div
-                  className={`relative w-full ${project.aspectRatio} transition-all duration-500`}
+                  className={`relative w-full aspect-video transition-all duration-500`}
                 >
                   {/* Background Image */}
                   <Image
