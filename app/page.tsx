@@ -108,23 +108,23 @@ export default function PortfolioSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent opacity-80" />
 
                 {/* Card Content */}
-                <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between z-10">
+                <div className="absolute inset-0 p-5 md:p-8 flex flex-col justify-between z-10">
                   {/* Top section: Number and Arrow */}
                   <div className="flex justify-between items-start">
-                    <span className="font-mono text-xs md:text-sm text-white/60">
+                    <span className="font-mono text-[10px] md:text-sm text-white/60">
                       {project.id}
                     </span>
-                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:bg-white group-hover:text-black group-hover:border-white">
-                      <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
+                    <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:bg-white group-hover:text-black group-hover:border-white">
+                      <ArrowUpRight className="w-3.5 h-3.5 md:w-5 md:h-5" />
                     </div>
                   </div>
 
                   {/* Bottom section: Title and Category */}
                   <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-3 md:mb-4 text-white/90 group-hover:text-white leading-tight">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium tracking-tight mb-2 md:mb-4 text-white/90 group-hover:text-white leading-tight">
                       {project.title}
                     </h3>
-                    <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
+                    <p className="font-mono text-[9px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
                       {project.category}
                     </p>
                   </div>
@@ -164,23 +164,23 @@ export default function PortfolioSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent opacity-80" />
 
                   {/* Card Content */}
-                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between z-10">
+                  <div className="absolute inset-0 p-5 md:p-8 flex flex-col justify-between z-10">
                     {/* Top section: Number and Arrow */}
                     <div className="flex justify-between items-start">
-                      <span className="font-mono text-xs md:text-sm text-white/60">
+                      <span className="font-mono text-[10px] md:text-sm text-white/60">
                         {project.id}
                       </span>
-                      <div className="w-10 h-10 md:w-12 md:h-12 border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:bg-white group-hover:text-black group-hover:border-white">
-                        <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:bg-white group-hover:text-black group-hover:border-white">
+                        <ArrowUpRight className="w-3.5 h-3.5 md:w-5 md:h-5" />
                       </div>
                     </div>
 
                     {/* Bottom section: Title and Category */}
                     <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-3 md:mb-4 text-white/90 group-hover:text-white leading-tight">
+                      <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium tracking-tight mb-2 md:mb-4 text-white/90 group-hover:text-white leading-tight">
                         {project.title}
                       </h3>
-                      <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
+                      <p className="font-mono text-[9px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
                         {project.category}
                       </p>
                     </div>
@@ -219,29 +219,29 @@ export default function PortfolioSection() {
                       src={`https://picsum.photos/seed/${project.id}/800/1000`}
                       alt={project.title}
                       fill
-                      className="object-cover opacity-80 group-hover:opacity-40 transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                      className="object-cover opacity-40 lg:opacity-80 group-hover:opacity-40 transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent opacity-100 lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     {/* Card Content - Hidden by default, visible on hover */}
-                    <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between z-10 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className="absolute inset-0 p-5 md:p-8 flex flex-col justify-between z-10 opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-500">
                       {/* Top section: Number and Arrow */}
                       <div className="flex justify-between items-start">
-                        <span className="font-mono text-xs md:text-sm text-white/60">
+                        <span className="font-mono text-[10px] md:text-sm text-white/60">
                           {project.id}
                         </span>
-                        <div className="w-10 h-10 md:w-12 md:h-12 border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 translate-y-2 -translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 group-hover:bg-white group-hover:text-black group-hover:border-white">
-                          <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
+                        <div className="w-8 h-8 md:w-12 md:h-12 border border-white/10 backdrop-blur-md flex items-center justify-center transition-all duration-500 lg:translate-y-2 lg:-translate-x-2 group-hover:translate-y-0 group-hover:translate-x-0 group-hover:bg-white group-hover:text-black group-hover:border-white">
+                          <ArrowUpRight className="w-3.5 h-3.5 md:w-5 md:h-5" />
                         </div>
                       </div>
 
                       {/* Bottom section: Title and Category */}
-                      <div className="transform transition-transform duration-500 translate-y-4 group-hover:translate-y-0">
-                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight mb-3 md:mb-4 text-white/90 group-hover:text-white leading-tight">
+                      <div className="transform transition-transform duration-500 lg:translate-y-4 group-hover:translate-y-0">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium tracking-tight mb-2 md:mb-4 text-white/90 group-hover:text-white leading-tight">
                           {project.title}
                         </h3>
-                        <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
+                        <p className="font-mono text-[9px] md:text-xs uppercase tracking-[0.15em] text-white/40 group-hover:text-white/70 transition-colors duration-500">
                           {project.category}
                         </p>
                       </div>
